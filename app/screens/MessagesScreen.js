@@ -5,7 +5,7 @@ import colors from '../config/colors'
 
 import Screen from '../components/Screen';
 import ListItem from '../components/ListItem'
-import Apptext from '../components/Apptext'
+import AppText from '../components/AppText'
 import ListItemSeparator from '../components/ListItemSeparator'
 import ListItemDeleteActions from '../components/ListItemDeleteActions'
 
@@ -53,7 +53,7 @@ function MessagresScreen(props) {
      }
      return (
           <Screen>
-          <Apptext style={styles.heading}>Chats</Apptext>
+          <AppText style={styles.heading}>Chats</AppText>
 
           <FlatList
                data={messages}

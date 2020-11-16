@@ -3,19 +3,20 @@ import {Text, StyleSheet, View, TouchableOpacity, } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons'; 
 
 import colors from '../config/colors'
+import defStyles from '../config/defStyles'
+import Icon from './Icon'
 
-function Login({title, onPress,}) {
+function AppButton({title, onPress,icon,style}) {
      return (
-          <TouchableOpacity style={styles.loginButton} onPress={onPress}>
-               
-               <View style={styles.loginIcon}><MaterialCommunityIcons name="login" size={24} color="white" /></View>
-               <Text style={styles.login}>{title}</Text>
+          <TouchableOpacity style={[styles.loginButton, style]} onPress={onPress}>
+               {icon && <MaterialCommunityIcons name={icon} color={defStyles.colors.white} size={20} style={styles.loginIcon}/>}
+               <Text style={styles.text}>{title}</Text>
           
           </TouchableOpacity>
      );
 }
 
-export default Login;
+export default AppButton;
 
 
 const styles = StyleSheet.create({
@@ -25,18 +26,18 @@ const styles = StyleSheet.create({
           flexDirection: 'row',
           justifyContent: "center",
           alignItems: 'center',
-          width: '80%',
-          height: 50,
+          width: '90%',
+          height: 45,
           backgroundColor: colors.primaryBlur,
           borderRadius: 50,
           borderColor: colors.primary,
-          marginBottom: 40,
-          shadowColor: 'white',
-          shadowOffset: {width: 10, height: 10},
-          shadowOpacity: 0.3,
-          shadowRadius: 10,
+          marginVertical: 10,
+          shadowColor: defStyles.colors.black,
+          shadowOffset: {width: 0, height: 10},
+          shadowOpacity: 0.5,
+          shadowRadius: 6,
      },
-     login:{
+     text:{
           fontFamily: 'Optima',
           fontSize: 20,
           textAlign: 'center',

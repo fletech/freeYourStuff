@@ -1,13 +1,11 @@
 import React from 'react';
 import { StyleSheet, View, FlatList } from 'react-native';
-import { MaterialCommunityIcons } from '@expo/vector-icons';
+//import { MaterialCommunityIcons } from '@expo/vector-icons';
 
 import User from '../components/User'
-import Apptext from '../components/Apptext'
 import colors from '../config/colors'
 import ListItemSeparator from '../components/ListItemSeparator';
 import Icon from '../components/Icon';
-import App from '../../App';
 
 
 const menuItems = [
@@ -91,7 +89,7 @@ function AccountScreen(props) {
                     subtitle={'factura-O-menu@hotmail.com'}
                     image={require('../assets/Turco.jpg')}
                     style={styles.user}
-                    EditComponent= {
+                    /*EditComponent= {
                          <View style={{position: 'absolute', flexDirection: 'row', alignItems: 'center', right: 20}}>
                               <Icon
                               name= 'border-color'
@@ -101,7 +99,7 @@ function AccountScreen(props) {
 
                               />
                               {edit && <Apptext style={{fontSize: 16, color: colors.secondary}}>{edit}</Apptext>}</View>
-                    }
+                    }*/
                />
                
                </View>

@@ -2,14 +2,15 @@ import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { MaterialCommunityIcons } from '@expo/vector-icons';
 import { FontAwesome } from '@expo/vector-icons';
+import defStyles from '../config/defStyles';
 
 
 function Icon({
      name,
      name2,
      size =40,
-     backgroundColor= '#363636',
-     iconColor= 0,
+     backgroundColor= defStyles.colors.black,
+     iconColor= defStyles.colors.white,
      style
 }) {
      return (

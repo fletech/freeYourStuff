@@ -4,7 +4,7 @@ import {Text} from 'react-native';
 import colors from '../config/colors'
 import defStyles from '../config/defStyles'
 
-function Apptext({children, style}) {
+function AppText({children, style}) {
      return (
 
      <Text style={[defStyles.text, style]}>{children}</Text>
@@ -12,4 +12,4 @@ function Apptext({children, style}) {
      );
 }
 
-export default Apptext;
+export default AppText;

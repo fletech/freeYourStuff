@@ -2,7 +2,7 @@ import React from 'react';
 import {Text, StyleSheet, View, Image } from 'react-native';
 
 import colors from '../config/colors'
-import Apptext from './Apptext'
+import AppText from './AppText'
 
 
 function Card({title, subtitle,availability,image, location, user}) {
@@ -15,14 +15,14 @@ function Card({title, subtitle,availability,image, location, user}) {
           />}
           <View style={styles.description}>
                <View style={styles.detailsContainer}>
-                    <Apptext style={styles.title}>{title}</Apptext>
-                    <Apptext style={styles.subtitle}>{subtitle}</Apptext>
-                    {availability && <Apptext style={styles.subtitle}>{availability}</Apptext>}
+                    <AppText style={styles.title}>{title}</AppText>
+                    <AppText style={styles.subtitle}>{subtitle}</AppText>
+                    {availability && <AppText style={styles.subtitle}>{availability}</AppText>}
 
                </View>
                <View style={styles.detailsUser}>
-                    <Apptext style={styles.location}>{location}</Apptext>
-                    <Apptext style={styles.user}>{user}</Apptext>
+                    <AppText style={styles.location}>{location}</AppText>
+                    <AppText style={styles.user}>{user}</AppText>
                     
                </View>
                

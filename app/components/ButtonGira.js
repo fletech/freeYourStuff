@@ -3,7 +3,7 @@ import {Text, StyleSheet, View, Image, TouchableHighlight } from 'react-native';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 import colors from '../config/colors'
-import Apptext from './Apptext'
+import AppText from './AppText'
 import Icon from './Icon'
 
 
@@ -53,7 +53,7 @@ function ButtonGira({
                     backgroundColor= {colorIcon}
                     
                     />
-                    <Apptext style={styles.title}>{title}</Apptext>
+                    <AppText style={styles.title}>{title}</AppText>
                </View>
           </TouchableHighlight>
 

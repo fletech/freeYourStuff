@@ -3,7 +3,7 @@ import {Text, StyleSheet, View, Image, TouchableHighlight } from 'react-native';
 import Swipeable from 'react-native-gesture-handler/Swipeable';
 
 import colors from '../config/colors'
-import Apptext from './Apptext'
+import AppText from './AppText'
 
 
 function ListItem({
@@ -25,8 +25,8 @@ function ListItem({
                          style={styles.image}     
                          source={image}/>}
                     <View style={styles.detailsUser}>
-                         <Apptext style={[styles.contact, styles.title]}>{title}</Apptext>
-                         <Apptext style={[styles.contact, styles.subtitle]}>{subtitle}</Apptext>
+                         <AppText style={[styles.contact, styles.title]}>{title}</AppText>
+                         <AppText style={[styles.contact, styles.subtitle]}>{subtitle}</AppText>
                     </View>
                </View>
           </TouchableHighlight>

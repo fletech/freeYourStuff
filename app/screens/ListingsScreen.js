@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, FlatList } from 'react-native';
 
-import Apptext from '../components/Apptext'
+import AppText from '../components/AppText'
 import Card from '../components/Card'
 import Screen from '../components/Screen'
 import Heading from '../components/Heading'

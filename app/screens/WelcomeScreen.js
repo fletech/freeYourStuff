@@ -3,10 +3,13 @@ import { Image, ImageBackground , StyleSheet, Text, View } from 'react-native';
  
 
 
+import defStyles from '../config/defStyles';
 import colors from '../config/colors'
-import Apptext from '../components/Apptext'
+
+import AppText from '../components/AppText'
+import Screen from '../components/Screen'
 import Heading from '../components/Heading'
-import Login from '../components/LoginButton'
+import AppButton from '../components/LoginButton'
 import Register from '../components/RegisterButton'
 import Menu from '../components/Menu'
 import Icon from '../components/Icon'
@@ -24,7 +27,7 @@ function WelcomeScreen(props) {
                <View style={styles.logoContainer}>
                     {Image && <Image style={styles.logo} />}
                     <Heading style={styles.logoSlogan}>freeYourStuff</Heading>
-                    <Apptext style={styles.bienvenida}>copenhagen</Apptext>
+                    <AppText style={styles.bienvenida}>copenhagen</AppText>
                </View>
 
                <Icon
@@ -37,7 +40,7 @@ function WelcomeScreen(props) {
 
                <Menu/>
 
-               <Login title={'login'}/>
+               <AppButton title={'login'}/>
 
                <Register/>
 
@@ -85,7 +88,10 @@ const styles = StyleSheet.create({
           fontSize: 40,
      },
      bienvenida:{
-          color: 'rgba(255,255,255,0.8)'
+          color: 'rgba(255,255,255,0.8)',
+          textAlign: 'center',
+          fontSize: defStyles.text.fontSize + 6,
+
      },
     
     

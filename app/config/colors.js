@@ -9,5 +9,6 @@ export default {
      medium: '#c0c0c0',
      grey: '#E0E0E0',
      danger: '#ff5252',
+     
 }
 

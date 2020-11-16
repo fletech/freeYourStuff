@@ -3,7 +3,7 @@ import {Text, StyleSheet, View, Image,  } from 'react-native';
 
 
 import colors from '../config/colors'
-import Apptext from './Apptext'
+import AppText from './AppText'
 
 
 function User({title, subtitle,image, IconComponent, name, EditComponent,onPress, renderRightActions, style}) {
@@ -20,9 +20,9 @@ function User({title, subtitle,image, IconComponent, name, EditComponent,onPress
                     
                     <View style={styles.detailsUser}>
 
-                         {name && <Apptext style={[styles.contact, styles.name]}>{name}</Apptext>}
-                         {title && <Apptext style={[styles.contact, styles.title]}>{title}</Apptext>}
-                         {subtitle && <Apptext style={[styles.contact, styles.subtitle]}>{subtitle}</Apptext>}
+                         {name && <AppText style={[styles.contact, styles.name]}>{name}</AppText>}
+                         {title && <AppText style={[styles.contact, styles.title]}>{title}</AppText>}
+                         {subtitle && <AppText style={[styles.contact, styles.subtitle]}>{subtitle}</AppText>}
                     </View>
                          {EditComponent}
 

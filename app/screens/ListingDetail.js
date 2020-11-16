@@ -3,7 +3,7 @@ import {Text, StyleSheet, View, Image } from 'react-native';
 
 import colors from '../config/colors'
 
-import Apptext from '../components/Apptext'
+import AppText from '../components/AppText'
 import ListItem from '../components/ListItem'
 import User from '../components/User'
 import Card from '../components/Card'
@@ -25,9 +25,9 @@ function ListinDetail({title, subtitle}) {
                />
           </View>
           <View style={styles.detailsContainer}>
-               <Apptext style={styles.title}>Veloretti bike</Apptext>
-               <Apptext style={styles.subtitle}>Good conditions</Apptext>
-               <Apptext style={styles.subtitle}>Østerport- KBH</Apptext>
+               <AppText style={styles.title}>Veloretti bike</AppText>
+               <AppText style={styles.subtitle}>Good conditions</AppText>
+               <AppText style={styles.subtitle}>Østerport- KBH</AppText>
           </View>
 
           <View style={styles.user}>
